@@ -21,31 +21,31 @@ if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
 #bot stats
 BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b><blockquote>BOT UPTIME 🍀</blockquote></b>\n<blockquote>{uptime}</blockquote>")
 #send custom message when user interact with bot
-USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "<blockquote>@Cultured_Weekends</blockquote>")
+USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "<blockquote></blockquote>")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7721134759:AAEXMdyeok0zUx-pe8-AwvjO5wDD2MJGKJs") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
 #your api id from https://my.telegram.org/apps
-APP_ID = int(os.environ.get("APP_ID", "28744454"))
+APP_ID = int(os.environ.get("APP_ID", ""))
 #your api hash from https://my.telegram.org/apps
-API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
+API_HASH = os.environ.get("API_HASH", "")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002488898677"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "6266529037"))
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://jeffymoses123:jeffymoses123@cluster0.ybmj0.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "filestorebot")
+DB_NAME = os.environ.get("DB_NAME", "filestorebots")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "<blockquote>Kᴏɴɪᴄʜɪᴡᴀ ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴀɴɪᴍᴇ/ᴍᴏᴠɪᴇ ғɪʟᴇs ɪɴ @Cultured_Weekends ᴄʜᴀɴɴᴇʟ  ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</blockquote>")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "JeffySama")
+OWNER_TAG = os.environ.get("OWNER_TAG", "Un_Soul")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "120"))
 
@@ -63,7 +63,7 @@ USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else F
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortxlinks.com")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "bea2b83467261cec3b811d76a9bd84533234219a")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200

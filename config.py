@@ -10,8 +10,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002192780030"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002076655534"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", ""))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -38,7 +38,7 @@ PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://jeffymoses123:jeffymoses123@cluster0.ybmj0.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "filestorebots")
+DB_NAME = os.environ.get("DB_NAME", "filestortebots")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
@@ -81,11 +81,11 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/verify_linkk")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "DM @JeffySama")
+UPI_ID = os.environ.get("UPI_ID", "DM @AlisaMikhailovna_Kujou_bot")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://envs.sh/Nc-.jpg")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://envs.sh/N4V.jpg")
 #SCREENSHOT URL of ADMIN for verification of payments
-SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/Weekends_Feedback_bot")
+SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/AlisaMikhailovna_Kujou_bot")
 #Time and its price
 #7 Days
 PRICE1 = os.environ.get("PRICE1", "30 rs")
@@ -114,7 +114,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 #add admins with space seperated
 # 7195990000 289371935 248979023
-ADMIN_LIST = os.environ.get("ADMINS", "6266529037 6429532957").split()
+ADMIN_LIST = os.environ.get("ADMINS", "5548954124").split()
 
 
 
